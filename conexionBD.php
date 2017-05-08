@@ -20,9 +20,9 @@ class BD {
     $dbname = "maxitasa";
 	*/
 	$servername = "127.0.0.1";
-	$username = "root";
-	$password = "";
-	$dbname = "marcaciones";
+	$username = "marcador";
+	$password = "marca123";
+	$dbname = "marcador";
 	
         $conn = new mysqli($servername, $username, $password,$dbname);
 		mysqli_set_charset(  $conn , 'utf8' );
