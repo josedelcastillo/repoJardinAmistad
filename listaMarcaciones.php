@@ -10,9 +10,9 @@ $local=$_REQUEST['local'];
     // header row
     $html .= '<thead>';
     $html .= '<tr>';
-    $html .= '<th>Entrada/Salida</th>';
+    $html .= '<th>Hora</th>';
     $html .= '<th>Nombre Completo</th>';
-	$html .= '<th>Hora</th>';
+    $html .= '<th>Entrada/Salida</th>';
 	$html .= '<th>Local</th>';
   $html .= '<th>Documento</th>';
 
@@ -22,11 +22,12 @@ $local=$_REQUEST['local'];
     foreach($marcaciones as $key=>$marca){
 		$html .= '<tr>';
 	//	$html .= '<td>'.$tasa['orden'] .'</td>';
+        $html .= '<td>'.$marca['fechaHora'].'</td>';
 		$html .= '<td>'.$marca['nombre']." ".$marca['apellidos'].'</td>';
-    $html .= '<td>'.$marca['fechaHora'].'</td>';
-    $html .= '<td>'.$marca['descLocal'].'</td>';
-    $html .= '<td>'.$marca['numeroDocumento'].'</td>';
-    $html .= '<td>'.($marca['tipo']==1?"Entrada":"Salida").'</td>';
+       $html .= '<td>'.($marca['tipo']==1?"Entrada":"Salida").'</td>';
+        $html .= '<td>'.$marca['descLocal'].'</td>';
+        $html .= '<td>'.$marca['numeroDocumento'].'</td>';
+    
 	    $html .= '</tr>';
 	}
     // finish table and return it
