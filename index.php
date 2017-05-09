@@ -81,7 +81,7 @@ $(document).ready(function(){
 					<div class="form-group row">
 			
 					  <div class="col-12">
-					    <input class="form-control" type="text" maxlength="8" placeHolder="DNI"   name="documentoIdentidad" id="documentoIdentidad">
+					    <input class="form-control" type="number" maxlength="8" placeHolder="DNI"   name="documentoIdentidad" id="documentoIdentidad">
 					    <button type="button" class="btn btn-primary" onclick="marcar();" >Marcar</button>
 					  </div>
 					  </div>
