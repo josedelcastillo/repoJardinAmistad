@@ -61,9 +61,9 @@ $(document).ready(function(){
 	      </div>
 	      <div id="navbar1" class="navbar-collapse collapse">
 	        <ul class="nav navbar-nav">
-	          <li data-toggle="collapse" data-target=".navbar-collapse" id="marcaMiraflores"  ><a href="marcarMiraflores.php">Marcación Miraflores</a></li>
-	          <li data-toggle="collapse" data-target=".navbar-collapse" id="marcaPalomas"  ><a href="marcarPalomas.php">Marcación Palomas</a></li>
-	          <li data-toggle="collapse" data-target=".navbar-collapse" id="marcaHalcones" ><a  href="marcarHalcones.php">Marcación Halcones</a></li>
+	          <li data-toggle="collapse" data-target=".navbar-collapse" id="menuMarca" class="active"  ><a href="index.php">Inicio</a></li>
+	          
+	          
 	          <!--li><a href="#">Login</a></li-->
 	        </ul>
 	      </div>
@@ -72,17 +72,25 @@ $(document).ready(function(){
 	    <!--/.container-fluid -->
 	  </nav>
 	<input type="hidden" id="menuElegido"/>
+	<input type="hidden" id="local" value="3"/>
 	<input type="hidden" id="usuarioLogueado" name="usuarioLogueado" />
 		
 		<div  class="col-md-10" style="margin-top: 80px; text-align: center;">
 			<div id="info" style="margin-top: 2%; text-align: center;">
 				<div  id="seccion1">
+					<div class="form-group row">
+			
+					  <div class="col-12">
+					    <input class="form-control" type="number" maxlength="8" placeHolder="DNI"   name="documentoIdentidad" id="documentoIdentidad">
+					    <button type="button" class="btn btn-primary" onclick="marcar();" >Marcar</button>
+					  </div>
+					  </div>
 					  <div class="form-group row">
 			
-							 
-							  <label class="control-label" id="lblMsg" style="font: bold; color: blue; font-size: 24px;">Ingresa a uno de los locales para marcar Asistencia</label>
+							  <label class="control-label" id="lblError" style="font: bold; color: red; font-size: 24px;"></label>
+							  <label class="control-label" id="lblMsg" style="font: bold; color: blue; font-size: 24px;"></label>
 					</div>
-				</div>
+					</div>
 			
 			</div>
 		</div>

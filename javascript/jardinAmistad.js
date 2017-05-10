@@ -11,6 +11,8 @@ function gaTrack(path, title) {
 }
 function cargarTablaMarcacionesHoy(){
 	var local=$("#local").val();
+	if (local==undefined)
+		local="";
 	 $.ajax({
 		type: "POST",
 		async:false, 
