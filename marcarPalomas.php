@@ -78,6 +78,13 @@ $(document).ready(function(){
 		<div  class="col-md-10" style="margin-top: 80px; text-align: center;">
 			<div id="info" style="margin-top: 2%; text-align: center;">
 				<div  id="seccion1">
+
+					<div class="form-group row">
+						<div class="col-12">
+							<label class="control-label" id="lblMsg" style="font: bold; color: blue; font-size: 24px;">Palomas</label>
+			  			</div>
+					 </div>
+					
 					<div class="form-group row">
 			
 					  <div class="col-12">
