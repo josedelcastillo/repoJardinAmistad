@@ -101,7 +101,7 @@ $(document).ready(function(){
 			
 			</div>
 		</div>
-		<div  class="col-md-10" style="margin-top: 80px; text-align: center;" id="tablaProfes">
+		<div  class="col-md-10" style=" text-align: center;" id="tablaProfes">
 			
 			
 			
