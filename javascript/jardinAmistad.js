@@ -66,6 +66,7 @@ function marcar(){
 				+ ":"  + ("0" + currentdate.getSeconds() ).slice(-2); 
 				$('#lblMsg').html("Marca Ingresada: "+datetime);
 				cargarTablaMarcacionesHoy();
+				$("#documentoIdentidad").val("");
 			}
 				
 			},
