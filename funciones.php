@@ -15,6 +15,31 @@
 		left join locales l on l.codigoLocal=m.local 
 		where m.fecha=current_date() and m.local=$local
 		order by fechaHora desc";
+
+		$result= BD::ejecutarQuerySelect($query);
+		if (count($result) > 0) {
+				
+		}
+		else {
+				$result=array();
+			}		
+		return $result;
+	}
+	function obtenerMarcacionesFecha($local,$fecha){
+		if(is_null($local) or $local=="")
+			$query="select nombre,apellidos,numeroDocumento,tipo,m.local,fechaHora,fecha, l.descLocal from empleado e
+		left join marcacion m on e.codigo=m.codigoEmpleado
+		left join locales l on l.codigoLocal=m.local 
+		where m.fecha=str_to_date('".$fecha."','%d-%m-%Y')
+		order by fechaHora desc";
+		else
+			$query="select nombre,apellidos,numeroDocumento,tipo,m.local,fechaHora,fecha, l.descLocal from empleado e
+		left join marcacion m on e.codigo=m.codigoEmpleado
+		left join locales l on l.codigoLocal=m.local 
+		where m.fecha=str_to_date('".$fecha."','%d-%m-%Y')
+		 and m.local=$local
+		order by fechaHora desc";
+		
 		$result= BD::ejecutarQuerySelect($query);
 		if (count($result) > 0) {
 				

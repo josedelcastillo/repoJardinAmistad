@@ -101,7 +101,8 @@ $(document).ready(function(){
 			</div>
 		</div>
 		<div  class="col-md-10" style=" text-align: center;" >
-			<button type="button" class="btn btn-primary" onclick="cargarTablaMarcacionesHoy();" >Refrescar</button>
+			<button type="button" class="btn btn-primary" onclick="cargarTablaMarcacionesHoy();" >Hoy</button>
+			<button type="button" class="btn btn-primary" onclick="cargarTablaMarcacionesAyer();" >Ayer</button>
 		</div>
 		<div  class="col-md-10" style=" text-align: center;" id="tablaProfes">
 			
